@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-I.
 
 make:
-	mpicc -o estPi asg1.c
+	mpicc -o estPi estPi.c
 	mpicc -o estPi_s estPi_s.c
 	mpicc -o estPi_g estPi_g.c
 

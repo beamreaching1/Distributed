@@ -13,6 +13,7 @@ int main(int argc, char const *argv[])
 	int samples;
 	double pi;
 	int rank, numtasks;
+	srand(time(NULL));
 
 	samples = atoi(argv[1]);
 

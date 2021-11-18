@@ -10,14 +10,14 @@ make then make run will compile and run these files in the order listed.
 
 estPi expects a single number in the command line representing the number of samples to be taken. The higher the sample number the more accurate the estimation of pi.
 
-mpirun -np 32 --mca mpi_cuda_support 0 estPi 1000000000
+mpirun -np 32 --mca mpi_cuda_support 0 estPi 1000000000  
     Count = 785492832, Sample = 1000000000, Estimate of pi = 3.14197, Time = 1.855s
 
-mpirun -np 32 --mca mpi_cuda_support 0 estPi_g 1000000000
+mpirun -np 32 --mca mpi_cuda_support 0 estPi_g 1000000000  
     Count = 764944860, Sample = 1000000000, Estimate of pi = 3.05978, Time = 2.200s
 
-mpirun -np 32 --mca mpi_cuda_support 0 estPi_s 1000000000
+mpirun -np 32 --mca mpi_cuda_support 0 estPi_s 1000000000  
     Count = 785400903, Sample = 1000000000, Estimate of pi = 3.14160, Time = 21.404s
 
-./estPi 1000000000
+./estPi 1000000000  
     Count = 785402979, Sample = 1000000000, Estimate of pi = 3.14161, Time = 33.944s

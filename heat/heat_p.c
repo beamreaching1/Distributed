@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
 	MPI_Type_commit(&row);
 
 	const int FIREWIDTH = ((int)(DIM * 0.4)) - (((int)(DIM * 0.4)) % 2);
-	const int ITERNUM = 10000;
+	const int ITERNUM = 100000;
 
 	/*
 	  Last process takes excess rows at bottom of room
@@ -173,8 +173,8 @@ void printOut(float out[][DIM], const int DIM_Y, int rank, MPI_Datatype row, int
 			reset = false;
 			resetInt = 1;
 		}
-		
-		//File IO to PPM file.
+
+		//File IO to PPM file
 		FILE *fptr;
 	
 		fptr = fopen("out.ppm", "w");

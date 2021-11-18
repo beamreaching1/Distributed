@@ -2,12 +2,7 @@ Heat is a simple heat distribution simulation. It is designed to distributed sec
 Heat also handles the boundary cases between each distributed section.
 The output is a color map of the heat distribution after x amount of iterations.
 
-<img
-src=./output.png”
-raw=true
-alt=“Heat Map Output”
-style=“margin-right: 10px;”
-/>
+![HeatMapOutput](./output.png)
 
 There is an included make file that should allow everything to compile and run correctly.
 
